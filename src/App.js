@@ -1,10 +1,15 @@
 import './App.css';
+import TopNavBar from './components/TopNavBar/TopNavBar';
+import { BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <h1>나만의 블로그</h1>
-    </div>
+    <>
+      <BrowserRouter>
+        {/* TopNavBar component */}
+        <TopNavBar></TopNavBar>
+      </BrowserRouter>
+    </>
   );
 }
 

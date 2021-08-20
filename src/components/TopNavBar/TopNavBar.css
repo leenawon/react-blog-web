@@ -60,3 +60,62 @@
   color: var(--yellow-color);
   cursor: pointer;
 }
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .top-navbar {
+    font-size: 1rem;
+  }
+
+  .social-icons i {
+    margin-right: 1rem;
+  }
+
+  .profile-and-search img {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .top-navbar .social-icons,
+  .top-navbar .profile-and-search {
+    flex: 2;
+  }
+
+  .navbar-list {
+    flex: 8;
+  }
+
+  .social-icons i:first-child {
+    margin-left: 1rem;
+  }
+
+  .profile-and-search img {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .top-navbar {
+    flex-direction: column;
+    height: auto;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+  }
+
+  .social-icons,
+  .navbar-list {
+    margin-bottom: 1rem;
+  }
+
+  .navbar-list {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .navbar-list {
+    font-size: 0.9rem;
+  }
+}

@@ -1,6 +1,7 @@
 import './App.css';
 import TopNavBar from './components/TopNavBar/TopNavBar';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import HomePage from './components/pages/HomePage';
 
 function App() {
   return (
@@ -8,6 +9,10 @@ function App() {
       <BrowserRouter>
         {/* TopNavBar component */}
         <TopNavBar></TopNavBar>
+        <Switch>
+          {/* Home Page component */}
+          <Route exact path="/" component={HomePage}></Route>
+        </Switch>
       </BrowserRouter>
     </>
   );

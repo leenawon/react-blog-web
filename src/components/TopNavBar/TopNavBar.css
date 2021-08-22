@@ -1,5 +1,6 @@
 :root {
   --black-color: #212121;
+  --white-color: #ffffff;
   --yellow-color: #ffd54f;
 }
 
@@ -11,7 +12,10 @@
   height: 50px;
   margin-top: 1rem;
   position: sticky;
+  top: 0;
+  z-index: 99;
   font-size: 1.2rem;
+  background-color: var(--white-color);
   color: var(--black-color);
 }
 
@@ -78,6 +82,10 @@
 }
 
 @media screen and (max-width: 645px) {
+  .top-navbar .social-icons {
+    margin-right: 1rem;
+  }
+
   .top-navbar .social-icons,
   .top-navbar .profile-and-search {
     flex: 2;
@@ -100,12 +108,12 @@
   .top-navbar {
     flex-direction: column;
     height: auto;
-    padding: 0.5rem;
     margin-top: 0.5rem;
   }
 
   .social-icons,
-  .navbar-list {
+  .navbar-list,
+  .profile-and-search {
     margin-bottom: 1rem;
   }
 

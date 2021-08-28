@@ -1,3 +1,13 @@
+:root {
+  --white-color: #ffffff;
+  --black-color: #212121;
+  --grey-color: #424242;
+  --green-color: #558b2f;
+  --orange-color: #bc5100;
+  --yellow-color: #ffd54f;
+  --light-yellow-color: #ffffcf;
+  --brown-color: #caae53;
+}
 /* Font */
 @font-face {
   font-family: "Cafe24SsurroundAir";

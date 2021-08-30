@@ -2,6 +2,7 @@ import React from 'react';
 import '../pages/HomePage.css';
 import HeroImage from '../HeroImage/HeroImage';
 import BlogPost from '../BlogPost/BlogPosts';
+import SideBar from '../SideBar/SideBar';
 
 function HomePage() {
   return (
@@ -12,6 +13,8 @@ function HomePage() {
       <div className="home-page">
         {/* Blog Post component */}
         <BlogPost></BlogPost>
+        {/* Side Bar component */}
+        <SideBar></SideBar>
       </div>
     </>
   )

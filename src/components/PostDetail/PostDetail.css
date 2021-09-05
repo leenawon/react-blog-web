@@ -1,0 +1,63 @@
+/* Post Detail */
+.post-detail {
+  flex: 9;
+  color: var(--black-color);
+}
+
+/* Post Detail Wrapper */
+.post-detail-wrapper {
+  width: 96%;
+  padding: 2rem 0 3rem 3rem;
+}
+
+/* Post Detail Image */
+.post-detail-image {
+  width: 100%;
+  height: 300px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* Post Detail Title */
+.post-detail-title {
+  text-align: center;
+  margin: 2rem;
+}
+
+/* Edit Delete Icons */
+.edit-delete-icons {
+  display: inline-block;
+  margin-left: 4rem;
+}
+
+.edit-delete-icons i {
+  float: right;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.edit-delete-icons i:first-child {
+  color: var(--orange-color);
+}
+
+.edit-delete-icons i:last-child {
+  margin-right: 1.5rem;
+  color: var(--green-color);
+}
+
+/* Post Detail Info */
+.post-detail-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 2rem 2rem;
+}
+
+/* Post Detail Text */
+.post-detail-text {
+  line-height: 1.5rem;
+}
+
+.post-detail-text::first-letter {
+  margin-left: 1rem;
+}

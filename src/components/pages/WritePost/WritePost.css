@@ -1,0 +1,104 @@
+/* Write Post */
+.write-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+
+/* Write Image */
+.write-image {
+  width: 70vw;
+  height: 300px;
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+/* Input Box */
+.input-box {
+  display: flex;
+  align-items: center;
+}
+
+.input-box i {
+  font-size: 1.5rem;
+  color: var(--yellow-color);
+  cursor: pointer;
+}
+
+/* Input File */
+#input-file {
+  display: none;
+}
+
+/* Title Input & Content Input */
+.title-input,
+.content-input {
+  width: 65vw;
+  border: none;
+  padding: 1.5rem;
+}
+
+.title-input,
+.content-input:focus {
+  outline: none;
+}
+
+.title-input {
+  font-size: 1.3rem;
+}
+
+.content-input {
+  font-size: 1.2rem;
+  height: 40vh;
+  margin-bottom: 2rem;
+}
+
+/* Write Button */
+.write-button {
+  float: right;
+  font-size: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0.8rem 1rem;
+  color: var(--white-color);
+  background-color: var(--brown-color);
+  cursor: pointer;
+}
+
+/* Media Query */
+@media screen and (max-width: 586px) {
+  .write-image {
+    height: 250px;
+  }
+
+  .input-box i {
+    font-size: 1.3rem;
+  }
+
+  .title-input {
+    font-size: 1.2rem;
+  }
+
+  .content-input {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 386px) {
+  .write-image {
+    height: 200px;
+  }
+
+  .input-box i {
+    font-size: 1.2rem;
+  }
+
+  .title-input {
+    font-size: 1rem;
+  }
+
+  .content-input {
+    font-size: 1rem;
+  }
+}

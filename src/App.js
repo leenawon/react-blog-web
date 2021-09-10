@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import HomePage from './components/pages/HomePage';
 import ShowPost from './components/ShowPost/ShowPost';
 import WritePost from './components/pages/WritePost/WritePost';
+import UserSetting from './components/pages/UserSetting/UserSetting';
 
 function App() {
   return (
@@ -18,6 +19,8 @@ function App() {
           <Route exact path="/show-post" component={ShowPost}></Route>
           {/* Write Post Component */}
           <Route exact path="/write-post" component={WritePost}></Route>
+          {/* User Setting Component */}
+          <Route exact path="/user-setting" component={UserSetting}></Route>
         </Switch>
       </BrowserRouter>
     </>

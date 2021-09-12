@@ -1,0 +1,144 @@
+/* User Setting */
+.user-setting {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* User Setting Container */
+.user-setting-container {
+  flex: 9;
+  margin: 1.8rem 0 0 3rem;
+}
+
+/* User Setting Title */
+.user-setting-title {
+  margin: 1.5rem 0;
+  color: var(--green-color);
+}
+
+/* User Setting Form */
+.user-setting-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Setting Profile Image */
+.setting-profile-image {
+  display: flex;
+  align-items: center;
+  margin: 1rem 0 2rem;
+}
+
+/* Profile Image */
+.profile-image {
+  width: 90px;
+  height: 90px;
+  border-radius: 1rem;
+  margin-right: 2rem;
+  object-fit: cover;
+}
+
+/* Setting Image Icon */
+.setting-profile-image i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  cursor: pointer;
+}
+
+/* Input File */
+#input-file {
+  display: none;
+}
+
+/* User Setting Form Input */
+.user-setting-form input {
+  width: 95%;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  border: none;
+  border-bottom: 1px solid var(--brown-color);
+}
+
+.user-setting-form input:focus {
+  outline: none;
+}
+
+/* User Setting Button */
+.user-setting-button {
+  border: none;
+  align-self: flex-end;
+  width: 20%;
+  float: right;
+  padding: 1rem 0.8rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: var(--white-color);
+  background-color: var(--brown-color);
+  cursor: pointer;
+}
+
+/* Media Query */
+@media screen and (max-width: 768px) {
+  .user-setting-button {
+    width: 30%;
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .user-setting-container {
+    margin-left: 2rem;
+  }
+
+  .user-setting-title {
+    margin-top: 0;
+  }
+
+  .user-setting-button {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .user-setting-container {
+    margin: 1.8rem 4rem 0;
+  }
+}
+
+@media screen and (max-width: 368px) {
+  .user-setting-container {
+    margin: 1.5rem 3rem;
+  }
+
+  .user-setting-title {
+    font-size: 1rem;
+  }
+
+  .profile-image {
+    width: 80px;
+    height: 80px;
+  }
+
+  .setting-profile-image i {
+    width: 28px;
+    height: 28px;
+    font-size: 1rem;
+  }
+
+  .user-setting-button {
+    font-size: 0.8rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .user-setting-container {
+    margin: 1rem 2rem;
+  }
+}

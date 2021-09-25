@@ -1,0 +1,105 @@
+/* Login Page */
+.login-page {
+  height: calc(100vh - 66px);
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../../../images/login-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Login Page Title */
+.login-page-title {
+  margin-bottom: 2rem;
+}
+
+/* Login Form */
+.login-form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form label {
+  margin-bottom: 0.5rem;
+}
+
+.login-form input {
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--brown-color);
+}
+
+.login-form input:focus {
+  outline: none;
+}
+
+/* Login Button */
+.login-button {
+  width: 30%;
+  align-self: center;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.login-button:hover {
+  color: var(--black-color);
+  background-color: var(--yellow-color);
+}
+
+/* Login Button & Sign Up Button */
+.login-button,
+.login-page-sign-up-button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Sign Up */
+.sign-up {
+  margin-top: 1rem;
+}
+
+.sign-up span {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+/* Sign Up Button */
+.login-page-sign-up-button {
+  background-color: transparent;
+}
+
+.login-page-sign-up-button:hover {
+  color: var(--green-color);
+}
+
+/* Media Query */
+@media screen and (max-width: 778px) {
+  .login-button {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .login-form {
+    width: 50%;
+  }
+
+  .login-button {
+    width: 70%;
+    padding: 0.8rem;
+  }
+}

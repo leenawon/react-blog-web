@@ -6,6 +6,7 @@ import ShowPost from './components/ShowPost/ShowPost';
 import WritePost from './components/pages/WritePost/WritePost';
 import UserSetting from './components/pages/UserSetting/UserSetting';
 import LoginPage from './components/pages/LoginPage/LoginPage';
+import SignUp from './components/pages/SignUp/SignUp';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           {/* User Setting Component */}
           <Route exact path="/user-setting" component={UserSetting}></Route>
           <Route exact path="/login" component={LoginPage}></Route>
+          <Route exact path="/signup" component={SignUp}></Route>
         </Switch>
       </BrowserRouter>
     </>

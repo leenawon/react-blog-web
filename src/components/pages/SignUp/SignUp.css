@@ -1,0 +1,105 @@
+/* Sign Up Page */
+.sign-up-page {
+  height: calc(100vh - 66px);
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.3)
+    ),
+    url("../../../images/sign-up-image.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* Sign Up Page Title */
+.sign-up-page-title {
+  margin-bottom: 2rem;
+}
+
+/* Sign Up Form */
+.sign-up-form {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sign-up-form label {
+  margin-bottom: 0.5rem;
+}
+
+.sign-up-form input {
+  margin-bottom: 1.5rem;
+  padding: 1rem 0;
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid var(--brown-color);
+}
+
+.sign-up-form input:focus {
+  outline: none;
+}
+
+/* Sign Up Button */
+.sign-up-button {
+  width: 40%;
+  align-self: center;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.sign-up-button:hover {
+  color: var(--black-color);
+  background-color: var(--yellow-color);
+}
+
+/* Sign Up Button & Sign Up Page Login Button */
+.sign-up-button,
+.sign-up-page-login-button {
+  border: none;
+  cursor: pointer;
+}
+
+/* Login */
+.login {
+  margin-top: 1rem;
+}
+
+.login span {
+  font-size: 0.8rem;
+  margin-right: 1rem;
+}
+
+/* Sign Up Page Login Button */
+.sign-up-page-login-button {
+  background-color: transparent;
+}
+
+.sign-up-page-login-button:hover {
+  color: var(--green-color);
+}
+
+/* Media Query */
+@media screen and (max-width: 778px) {
+  .sign-up-button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 598px) {
+  .sign-up-form {
+    width: 50%;
+  }
+
+  .sign-up-button {
+    width: 70%;
+    padding: 0.8rem;
+  }
+}

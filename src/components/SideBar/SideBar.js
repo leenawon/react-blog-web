@@ -1,6 +1,7 @@
 import React from 'react';
 import '../SideBar/SideBar.css';
 import SideBarImage from '../../images/side-bar-image.jpg';
+import { Link } from 'react-router-dom';
 
 function SideBar() {
   return (
@@ -11,9 +12,13 @@ function SideBar() {
           About Me
         </h3>
         {/* Side Bar Image */}
-        <img className="side-bar-image" src={SideBarImage} alt="Yellow Flower"></img>
-        {/* Side Bar Text */}
-        <p className="side-bar-text">naoni</p>
+        <img className="side-bar-image" src={SideBarImage} alt="노란 꽃"></img>
+        {/* Side Bar Name */}
+        <span className="side-bar-name">naoni</span>
+        {/* Setting Button */}
+        <Link to="/user-setting">
+          <button className="setting-button">수정</button>
+        </Link>
       </div>
       <div className="side-bar-item">
         <h3 className="side-bar-title">

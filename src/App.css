@@ -23,3 +23,8 @@
   box-sizing: border-box;
   font-family: "Cafe24SsurroundAir";
 }
+
+a {
+  color: inherit;
+  text-decoration: none;
+}

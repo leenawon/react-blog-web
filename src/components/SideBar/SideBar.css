@@ -1,7 +1,7 @@
 /* Side Bar */
 .side-bar {
   flex: 3;
-  height: 600px;
+  height: 620px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -26,7 +26,7 @@
 }
 
 /* Side Bar Text & Category List & Social Icons margin bottom */
-.side-bar-item .side-bar-text,
+.side-bar-item .side-bar-name,
 .category-list,
 .social-icons {
   margin-bottom: 1rem;
@@ -39,6 +39,14 @@
   margin: 1rem;
   border-radius: 1rem;
   object-fit: cover;
+}
+
+.setting-button {
+  border: none;
+  background-color: transparent;
+  color: var(--orange-color);
+  font-size: 0.8rem;
+  cursor: pointer;
 }
 
 /* Category List */
@@ -70,7 +78,7 @@
     font-size: 1rem;
   }
 
-  .side-bar-text,
+  .side-bar-name,
   .category-list,
   .social-icons {
     font-size: 0.8rem;
@@ -82,7 +90,7 @@
     margin: 1rem;
   }
 
-  .side-bar-text,
+  .side-bar-name,
   .category-list,
   .social-icons {
     font-size: 1rem;

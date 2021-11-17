@@ -46,8 +46,8 @@
 
 /* Profile Image and Search */
 .profile-and-search img {
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   margin-right: 2rem;
   border-radius: 50%;
   object-fit: cover;
@@ -55,8 +55,16 @@
 }
 
 .profile-and-search i {
-  color: var(--yellow-color);
   cursor: pointer;
+}
+
+.profile-and-search i:first-child {
+  font-size: 30px;
+  margin-right: 2rem;
+}
+
+.profile-and-search i:last-child {
+  color: var(--yellow-color);
 }
 
 /* Media Query */

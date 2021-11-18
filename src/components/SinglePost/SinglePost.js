@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../SinglePost/SinglePost.css';
 
 function SinglePost(props) {
@@ -14,7 +15,9 @@ function SinglePost(props) {
           <span>[ {props.category} ]</span>
         </div>
         {/* Post Title */}
-        <h4 className="post-title">{props.title}</h4>
+        <Link to="/show-post">
+          <h4 className="post-title">{props.title}</h4>
+        </Link>
         <hr/>
         {/* Post Date */}
         <span className="post-date">{props.date}</span>

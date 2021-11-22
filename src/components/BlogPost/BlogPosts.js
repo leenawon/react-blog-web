@@ -10,9 +10,9 @@ function BlogPost() {
     // Blog Post
     <div className="blog-post">
       {/* Single Post component */}
-      <SinglePost src={PostImage1} category="일상" title="나의 일상" date="1시간 전"></SinglePost>
-      <SinglePost src={PostImage2} category="음악" title="플레이리스트" date="2시간 전"></SinglePost>
-      <SinglePost src={PostImage3} category="기술" title="주목할 기술" date="30분 전"></SinglePost>
+      <SinglePost id="1" src={PostImage1} category="일상" title="나의 일상" date="1시간 전"></SinglePost>
+      <SinglePost id="2" src={PostImage2} category="음악" title="플레이리스트" date="2시간 전"></SinglePost>
+      <SinglePost id="3" src={PostImage3} category="기술" title="주목할 기술" date="30분 전"></SinglePost>
     </div>
   )
 }
